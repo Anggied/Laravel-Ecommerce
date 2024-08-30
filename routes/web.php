@@ -32,7 +32,4 @@ Route::middleware('auth')->group(function () {
 
 require __DIR__.'/auth.php';
 
-//Create connection with dashboard
-
-
-//
+Route::get("admin/login", [AdminController::class, 'login' ]) -> name('admin.login'); 
